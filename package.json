@@ -9,10 +9,7 @@
     "format": "prettier --write '**/*.{ts,js,css,json,md}'",
     "test:clean": "rimraf ./transpiled/src ./transpiled/test",
     "test": "npm run test:clean && npm run transpile && mocha --require source-map-support/register --recursive transpiled/test",
-    "transpile": "tsc --project ./test"
-    "start": "node build/index.js",
-    "build": "tsc",
-    "postinstall": "npm run build"    
+    "transpile": "tsc --project ./test"  
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^2.0.0",
